@@ -28,7 +28,7 @@ function nameConverter(char) {
     //filterout the empty elements 
     arr2 = arr.filter((x) => (x != ''));
     // if it is a camel case or pascal case capitalize the starting letter
-    if(val == "") arr2 = arr2.map((x) =>(x[0].toUpperCase() + x.slice(1)));
+    if(text.val == "") arr2 = arr2.map((x) =>(x[0].toUpperCase() + x.slice(1)));
     // join them with given parameter (for camelcase val = "",kababCase = "-", snakeCase = "_")
     return arr2.join(`${char}`)
 }
